@@ -1,0 +1,71 @@
+#include <iostream>
+using namespace std;
+
+
+class MainMenu
+{
+public:
+	int choice, j = 0;
+	string username, password;
+    string uname[500];
+    string pword[500];
+	void Menu()
+	{
+		cout << "\t\tHOTEL KRYSTAL" << endl;
+cout<<"____________________________________________________________________________________\n";
+		cout << "1) Sing-up\n2) Book a room\n3) View your room informations\n4) View you personal details\n5) Edit your personal details\n6) Change password" << endl;
+cout<<"____________________________________________________________________________________\n";
+		cin >> choice;
+		switch (choice)
+		{
+		case 1:
+        j++;
+        cout << "\t LOGIN" << endl;
+        cout << "username:" << endl;
+        cin >> username;
+        //uname[j] = username;
+        cout << "password:" << endl;
+        cin >> password;
+        //pword[j] = password;
+        cout << "account registered!"<< endl;
+		break;
+        
+		case 2:
+        cout << username << endl;
+        cout << password << endl;
+		break;
+/*
+		case 3:
+
+		break;
+
+		case 4:
+
+		break;
+
+		case 5:
+
+		break;
+
+		case 6:
+
+		break;
+*/
+		}
+	}
+};
+
+
+
+
+
+
+int main()
+{
+	MainMenu giorgio;
+	int i = 0;
+	while (i == 0)
+	{
+		giorgio.Menu();
+	}
+}
